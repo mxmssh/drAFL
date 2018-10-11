@@ -4,11 +4,11 @@ Original AFL supports black-box coverage-guided fuzzing using QEMU mode. I highl
 
 # Usage
 
-You need to specify ```DRRUN_PATH``` to point to ```drrun``` launcher and ```LIBCOV_PATH``` to point to ```libbinafl.so``` coverage DLL. You also need to switch off AFL's fork server (```AFL_NO_FORKSRV=1```) and probably ```AFL_SKIP_BIN_CHECK=1```. See step 5 in the build section below for more details.
+You need to specify ```DRRUN_PATH``` to point to ```drrun``` launcher and ```LIBCOV_PATH``` to point to ```libbinafl.so``` coverage library. You also need to switch off AFL's fork server (```AFL_NO_FORKSRV=1```) and probably ```AFL_SKIP_BIN_CHECK=1```. See step 5 in the build section below for more details.
 
 # Instrumentation DLL
 
-Instrumentation DLL is a modified version of [winAFL's](https://github.com/googleprojectzero/winafl) coverage DLL created by Ivan Fratric.
+Instrumentation library is a modified version of [winAFL's](https://github.com/googleprojectzero/winafl) coverage library created by Ivan Fratric.
 
 # Build
 
