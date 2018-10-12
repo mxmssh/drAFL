@@ -6,6 +6,11 @@ Original AFL supports black-box coverage-guided fuzzing using QEMU mode. I highl
 
 You need to specify ```DRRUN_PATH``` to point to ```drrun``` launcher and ```LIBCOV_PATH``` to point to ```libbinafl.so``` coverage library. You also need to switch off AFL's fork server (```AFL_NO_FORKSRV=1```) and probably ```AFL_SKIP_BIN_CHECK=1```. See step 5 in the build section below for more details.
 
+NOTE: Don't forget that you should use 64-bit DynamoRIO for 64-bit binaries and 32-bit DynamoRIO for 32-bit binaries, otherwise it will not work. To make sure that your target is running under DynamoRIO, you can run it using the following command:
+```
+drrun -- <path/to/your/app/> <app_args>
+```
+
 # Instrumentation DLL
 
 Instrumentation library is a modified version of [winAFL's](https://github.com/googleprojectzero/winafl) coverage library created by Ivan Fratric.
