@@ -59,6 +59,6 @@ export DRRUN_PATH=/home/max/drAFL/build_dr/bin64/drrun
 export LIBCOV_PATH=/home/max/drAFL/build/libbinafl.so 
 export AFL_NO_FORKSRV=1
 export AFL_SKIP_BIN_CHECK=1
-../afl/afl-fuzz -m 500 -i in -o out -- ./afl_test @@
+../afl/afl-fuzz -m none -i in -o out -- ./afl_test @@
 ```
 In case of ```afl_test``` you should expect 25-30 exec/sec and 1 unique crash in 2-3 minutes.
