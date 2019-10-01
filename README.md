@@ -1,6 +1,6 @@
 # drAFL
 
-Original AFL supports black-box coverage-guided fuzzing using QEMU mode. I highly recommend to try it first and if it doesn't work you can try this tool. Additionally, you might want to use (Manul)[https://github.com/mxmssh/manul] that supports blackbox binaries fuzzing on Windows and Linux.
+Original AFL supports black-box coverage-guided fuzzing using QEMU mode. I highly recommend to try it first and if it doesn't work you can try this tool. Additionally, you might want to use [Manul](https://github.com/mxmssh/manul) that supports blackbox binaries fuzzing on Windows and Linux.
 
 # Usage
 
